@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO-Fit HUB - YOUR Journey Starts NOW</title>
+
+    <!-- - favicon------->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!------ custom css link---->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="eligibility.css">
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!--  - google font link--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap" rel="stylesheet">
+ </head>
+
+ <body>
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+</div>
+<nav class="navbar">
+    <div class="max-width">
+        <div class="logo"><a href="#">GO-Fit<span> HUB.</span></a></div>
+        <ul class="menu">
+            <li><a href="./index.html" class="menu-btn">Home</a></li>
+            <li><a href="#about" class="menu-btn">About Us</a></li>
+            <li><a href="./tutorials.html" class="menu-btn">Tutorials</a></li>
+            <li><a href="#contact_us" class="menu-btn">Contact</a></li>
+            <li><a href="./eligibility.html" class="menu-btn">Join Now</a></li>
+            <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="menu-btn">Login</button></li>
+        </ul>
+    </nav>
+        
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+ <main class="mdc-top-app-bar--fixed-adjust footer--fixed-adjust">
+  <div class="main-container">
+    <form
+      id="eligibility-form"
+      class="mdc-card fullish-height flex-center flex-column space-evenly"
+    >
+      <label class="mdc-text-field mdc-text-field--filled">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="full-name">Full Name</span>
+        <input
+          class="mdc-text-field__input"
+           type="text"
+          aria-labelledby="full-name"
+        />
+        <span class="mdc-line-ripple"></span>
+      </label>
+
+      <label class="mdc-text-field mdc-text-field--filled">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="user-name">Username</span>
+        <input
+          class="mdc-text-field__input"
+          type="text"
+          aria-labelledby="user-name"
+        />
+        <span class="mdc-line-ripple"></span>
+      </label>
+
+      <label class="mdc-text-field mdc-text-field--filled">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="enter-password"
+          >Enter Password</span
+        >
+        <input
+          class="mdc-text-field__input"
+          type="password"
+          aria-labelledby="enter-password"
+          maxlength="10"
+        />
+        <span class="mdc-line-ripple"></span>
+      </label>
+
+      <label class="mdc-text-field mdc-text-field--filled">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="confirm-password"
+          >Confirm Password</span
+        >
+        <input
+          class="mdc-text-field__input"
+          type="password"
+          aria-labelledby="confirm-password"
+          maxlength="10"
+        />
+        <span class="mdc-line-ripple"></span>
+      </label>
+
+      <label class="mdc-text-field mdc-text-field--filled">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="user-age">Age</span>
+        <input
+          class="mdc-text-field__input"
+          type="number"
+          aria-labelledby="user-age"
+        />
+        <span class="mdc-line-ripple"></span>
+      </label>
+
+      <label class="mdc-text-field mdc-text-field--filled">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="birth-date">Birth Date</span>
+        <input
+          class="mdc-text-field__input"
+          type="date"
+          aria-labelledby="birth-date"
+        />
+        <span class="mdc-line-ripple"></span>
+      </label>
+
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input
+            type="checkbox"
+            class="mdc-checkbox__native-control"
+            id="terms-checkbox"
+          />
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+              <path
+                class="mdc-checkbox__checkmark-path"
+                fill="none"
+                d="M1.73,12.91 8.1,19.28 22.79,4.59"
+              />
+            </svg>
+            <div class="mdc-checkbox__mixedmark"></div>
+          </div>
+          <div class="mdc-checkbox__ripple"></div>
+        </div>
+        <label for="terms-checkbox">I agree to the terms of service</label>
+      </div>
+
+      <button class="mdc-button mdc-button--raised">
+        <span class="mdc-button__label">Sign up</span>
+      </button>
+    </form>
+  </div>
+</main>
+    <footer>
+        <span id="copyright"> &copy; TechWise Team 24 </span>
+    </footer>
+    <script src="./eligibility.js"></script>
+
+  </body>
+</html>
